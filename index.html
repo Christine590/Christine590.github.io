@@ -9,7 +9,7 @@
 
 	<title>My New Hugo Site</title>
 
-	<link rel="shortcut icon" href="http://example.org/">
+	<link rel="shortcut icon" href="{{ .Site.BaseURL }}">
 
 	
 	<link href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.no-icons.min.css" rel="stylesheet">
@@ -18,7 +18,7 @@
 	
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alice|Open+Sans:400,300,700">
 	
-	<link rel="stylesheet" href="http://example.org/css/styles.css">
+	<link rel="stylesheet" href="{{ .Site.BaseURL }}css/styles.css">
 
 	
 
@@ -31,7 +31,7 @@
 	<div id="head" class="parallax" parallax-speed="2">
            <div class="banner" style="background-image:url(http://example.org/);" >
            <h1 id="logo" class="text-center">
-              <img class="img-circle" src="http://example.org/" alt="">
+              <img class="img-circle" src="{{ .Site.BaseURL }}" alt="">
               <span class="title"></span>
               <span class="tagline"><br>
                  <a href="mailto:"></a>
@@ -128,7 +128,7 @@
 
 <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
 <script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
-<script src="http://example.org/js/template.js"></script>
+<script src="{{ .Site.BaseURL }}js/template.js"></script>
 </body>
 </html>
 
