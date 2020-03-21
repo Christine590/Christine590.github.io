@@ -3,15 +3,55 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://example.org/categories/</loc>
+    <loc>http://Christine590.github.io/about/</loc>
   </url>
   
   <url>
-    <loc>http://example.org/</loc>
+    <loc>http://Christine590.github.io/</loc>
+    <lastmod>2020-03-21T09:59:47+08:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/tags/</loc>
+    <loc>http://Christine590.github.io/post/first-post/</loc>
+    <lastmod>2020-03-21T09:59:47+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://Christine590.github.io/post/</loc>
+    <lastmod>2020-03-21T09:59:47+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://Christine590.github.io/post/vivamus-lacus-mauris/</loc>
+    <lastmod>2013-06-17T12:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://Christine590.github.io/service/service3/</loc>
+  </url>
+  
+  <url>
+    <loc>http://Christine590.github.io/categories/</loc>
+  </url>
+  
+  <url>
+    <loc>http://Christine590.github.io/service/service1/</loc>
+  </url>
+  
+  <url>
+    <loc>http://Christine590.github.io/service/service4/</loc>
+  </url>
+  
+  <url>
+    <loc>http://Christine590.github.io/service/</loc>
+  </url>
+  
+  <url>
+    <loc>http://Christine590.github.io/tags/</loc>
+  </url>
+  
+  <url>
+    <loc>http://Christine590.github.io/service/service2/</loc>
   </url>
   
 </urlset>
