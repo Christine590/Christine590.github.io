@@ -6,7 +6,7 @@
     <description>Recent content on Christine&#39;s Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Sat, 21 Mar 2020 09:59:47 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 29 Mar 2020 13:48:47 +0800</lastBuildDate>
     
 	<atom:link href="https://Christine590.github.io/index.xml" rel="self" type="application/rss+xml" />
     
@@ -22,12 +22,24 @@ Necessitatibus Velit, odit, eius, libero unde impedit quaerat dolorem assumenda 
     </item>
     
     <item>
-      <title>First Post</title>
+      <title>Markdown 基本語法</title>
       <link>https://Christine590.github.io/post/first-post/</link>
-      <pubDate>Sat, 21 Mar 2020 09:59:47 +0800</pubDate>
+      <pubDate>Sun, 29 Mar 2020 13:48:47 +0800</pubDate>
       
       <guid>https://Christine590.github.io/post/first-post/</guid>
-      <description></description>
+      <description>前言 因為沒有撰寫Markdown的經驗，這次將初步習得的一些語法寫下來，免得以後失憶又要各種翻翻找找，順便提供給跟我一樣是新手的人參考囉！
+What is Markdown? 是一種輕量級標記語言，創始人為 John Gruber。
+用Markdown編寫的純文本檔案可轉換成有效的XHTML或HTML文件，使開發者能更專注於內容寫作，易讀易寫是其最大特色。
+語法範例 ➤ 標題 setext 形式：
+H1 H2 &amp;lt;!-- 下方為 Markdown 寫法 --&amp;gt; H1 == H2 -- Christine&amp;rsquo;s Memo：
+ =及-在撰寫時沒有限制要輸入多少數量，基本上符號的上面一行都會套用H1的效果，也因此要特別注意，若有不想套用到效果的文字要記得分開寫。setext僅支援H1、H2兩種標題。
+ atx 形式：
+H1 H2 H3 H4 H5 H6 &amp;lt;!-- 下方為 Markdown 寫法 --&amp;gt; # H1 ## H2 ### H3 #### H4 ##### H5 ###### H6 Christine&amp;rsquo;s Memo：
+ #可以只寫在左邊，也可以左右對稱包住標題文字，例如# H1 #，特別注意#後面要空一格再加上標題文字，不然會被視為純符號。
+  ➤ 內文 粗體
+粗體
+斜體 斜體
+刪除線</description>
     </item>
     
     <item>

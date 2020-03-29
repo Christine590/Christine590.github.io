@@ -41,7 +41,7 @@ body {
   -moz-background-clip: padding;
   border-radius: 0;
   background-clip: padding-box;
-  font-family: "Open sans", Helvetica, Arial, sans-serif;
+  font-family: "Open sans", Helvetica, Arial, sans-serif, Microsoft JhengHei;
   font-weight: 300;
   text-transform: uppercase;
 }
@@ -151,6 +151,11 @@ blockquote {
   margin: 0 0 30px;
   border-left: 5px solid #eee;
 }
+
+blockquote > p {
+  line-height: 1.6em;
+}
+
 h1,
 h2,
 h3,
@@ -163,7 +168,7 @@ h6,
 .h4,
 .h5,
 .h6 {
-  font-family: "Open sans", Helvetica, Arial, sans-serif;
+  font-family: "Open sans", Helvetica, Arial, sans-serif, Microsoft JhengHei;
   font-weight: 400;
   color: #333333;
 }
@@ -235,7 +240,7 @@ a:hover {
   margin: 0 auto;
 }
 #head .title {
-  font-family: Alice, Georgia, serif;
+  font-family: Alice, Georgia, serif, Microsoft JhengHei;
   font-size: 49px;
   font-size: 3.0625rem;
 }
@@ -284,7 +289,7 @@ img {
   font-size: 0.75rem;
   text-decoration: none;
   text-transform: uppercase;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif, Microsoft JhengHei;
   color: #333;
   -webkit-border-radius: 0px;
   -webkit-background-clip: padding-box;
@@ -362,7 +367,7 @@ img {
 }
 .featured h3 {
   font-weight: bold;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif, Microsoft JhengHei;
   font-size: 24px;
   font-size: 1.5rem;
   text-transform: uppercase;
@@ -484,7 +489,7 @@ img {
   border: 0 none;
   font-size: 20px;
   font-size: 1.25rem;
-  font-family: Georgia, serif;
+  font-family: Georgia, serif, Microsoft JhengHei;
 }
 .pagination > li > a:hover {
   color: #000000;
@@ -551,7 +556,7 @@ img {
 }
 .entry-header .entry-meta {
   text-align: center;
-  font-family: Georgia, serif;
+  font-family: Georgia, serif, Microsoft JhengHei;
   font-size: 18px;
   font-size: 1.125rem;
   font-style: italic;
