@@ -5,6 +5,8 @@
 	<meta name="viewport"    content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="">
 	<meta name="author"      content="Sergey Pozhilov (GetTemplate.com)">
+	
+	<meta name="p:domain_verify" content="842e11998f3b93944f2302fbba3c236e"/>
 
 	<title>Posts</title>
 
@@ -18,6 +20,8 @@
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alice|Open+Sans:400,300,700">
 	
 	<link rel="stylesheet" href="https://Christine590.github.io/css/styles.css">
+	
+	<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 
 	
 
@@ -31,7 +35,7 @@
            <div class="banner" style="background-image:url('https://Christine590.github.io/images/bg_code.jpg')" >
            <h1 id="logo" class="text-center">
               <img class="img-circle" src="https://Christine590.github.io/images/me.jpg" alt="">
-              <span class="title">Christine Wu</span>
+              <span class="title">Christine&#39;s Space</span>
 							<span class="tagline">Enjoy challenges !<br>
 								I like who I&#39;m becoming
                  
@@ -60,11 +64,7 @@
                 </li>
                 
                 <li>
-                    <a href="/">portfolio</a>
-                </li>
-                
-                <li>
-                    <a href="/post/">blog</a>
+                    <a href="/post/">post</a>
                 </li>
                 
                 <li>
@@ -93,265 +93,24 @@
 					<header class="entry-header">
 						<div class="entry-meta">
                                                    <span class="posted-on">
+                                                      <time class="entry-date published" datetime="March 310, 31310">March 31, 2020</time>
+                                                   </span>
+						</div>
+						<h1 class="entry-title"><a href="https://Christine590.github.io/post/hugo/" rel="bookmark">Hugo&#43;GitHub Pages架站教學 </a></h1>
+					</header>
+					
+				</article>
+                
+				<article class="post">
+					<header class="entry-header">
+						<div class="entry-meta">
+                                                   <span class="posted-on">
                                                       <time class="entry-date published" datetime="March 290, 29290">March 29, 2020</time>
                                                    </span>
 						</div>
-						<h1 class="entry-title"><a href="https://Christine590.github.io/post/first-post/" rel="bookmark">Markdown 基本語法</a></h1>
+						<h1 class="entry-title"><a href="https://Christine590.github.io/post/markdown/" rel="bookmark">Markdown 語法教學</a></h1>
 					</header>
-					<div class="entry-content">
-						<h2 id="前言">前言</h2>
-<p>因為沒有撰寫<code>Markdown</code>的經驗，這次將初步習得的一些語法寫下來，免得以後失憶又要各種翻翻找找，順便提供給跟我一樣是新手的人參考囉！</p>
-<h2 id="what-is-markdown">What is Markdown?</h2>
-<p>是一種輕量級標記語言，創始人為 John Gruber。<br>
-用<code>Markdown</code>編寫的純文本檔案可轉換成有效的<code>XHTML</code>或<code>HTML</code>文件，使開發者能更專注於內容寫作，易讀易寫是其最大特色。</p>
-<h2 id="語法範例">語法範例</h2>
-<h4 id="-標題">➤ 標題</h4>
-<p><strong>setext 形式：</strong></p>
-<h1 id="h1">H1</h1>
-<h2 id="h2">H2</h2>
-<pre><code>&lt;!-- 下方為 Markdown 寫法 --&gt;
-H1
-==
-H2
---
-</code></pre><p><em>Christine&rsquo;s Memo：</em></p>
-<blockquote>
-<p><code>=</code>及<code>-</code>在撰寫時沒有限制要輸入多少數量，基本上符號的上面一行都會套用<code>H1</code>的效果，也因此要特別注意，若有不想套用到效果的文字要記得分開寫。setext僅支援<code>H1</code>、<code>H2</code>兩種標題。</p>
-</blockquote>
-<p><strong>atx 形式：</strong></p>
-<h1 id="h1-1">H1</h1>
-<h2 id="h2-1">H2</h2>
-<h3 id="h3">H3</h3>
-<h4 id="h4">H4</h4>
-<h5 id="h5">H5</h5>
-<h6 id="h6">H6</h6>
-<pre><code>&lt;!-- 下方為 Markdown 寫法 --&gt;
-# H1  
-## H2  
-### H3  
-#### H4  
-##### H5  
-###### H6
-</code></pre><p><em>Christine&rsquo;s Memo：</em></p>
-<blockquote>
-<p><code>#</code>可以只寫在左邊，也可以左右對稱包住標題文字，例如<code># H1 #</code>，特別注意<code>#</code>後面要空一格再加上標題文字，不然會被視為純符號。</p>
-</blockquote>
-<hr>
-<h4 id="-內文">➤ 內文</h4>
-<p><strong>粗體</strong><br>
-<strong>粗體</strong><br>
-<em>斜體</em> <br>
-<em>斜體</em><br>
-<del>刪除線</del></p>
-<pre><code>&lt;!-- 下方為 Markdown 寫法 --&gt;
-__粗體__  
-**粗體**    
-_斜體_   
-*斜體*   
-~~刪除線~~ 
-</code></pre><hr>
-<h4 id="-連結">➤ 連結</h4>
-<p><a href="https://christine590.github.io/" title="Christine's Site">Christine&rsquo;s Site</a><br>
-<a href="https://christine590.github.io/">https://christine590.github.io/</a></p>
-<pre><code>&lt;!-- 下方為 Markdown 寫法 --&gt;
-[Christine's Site](https://christine590.github.io/ &quot;Christine's Site&quot;)
-&lt;https://christine590.github.io/&gt; 
-</code></pre><p><em>Christine&rsquo;s Memo：</em></p>
-<blockquote>
-<p>連結寫法不只一種，上面以最常見的方法為例，用法為<code>[連結識別名稱](連結路徑) &quot;連結title屬性的值&quot; </code>，而使用<code>&lt;連結路徑&gt;</code>則會自動將包住的Url轉為超連結。上方所指的連結路徑可為網址或專案中檔案的相對路徑。</p>
-</blockquote>
-<hr>
-<h4 id="-清單">➤ 清單</h4>
-<p><strong>無排序：</strong></p>
-<ul>
-<li>台劇</li>
-</ul>
-<ul>
-<li>日劇</li>
-</ul>
-<ul>
-<li>韓劇
-<ul>
-<li>告白夫婦</li>
-</ul>
-<ul>
-<li>孤單又燦爛的神-鬼怪</li>
-</ul>
-<ul>
-<li>愛的迫降</li>
-</ul>
-</li>
-</ul>
-<pre><code>&lt;!-- 下方為 Markdown 寫法 --&gt;
-* 台劇
-+ 日劇
-- 韓劇
-  * 告白夫婦
-  + 孤單又燦爛的神-鬼怪
-  - 愛的迫降
-</code></pre><p><strong>有排序：</strong></p>
-<ol>
-<li>台劇</li>
-<li>日劇</li>
-<li>韓劇</li>
-</ol>
-<pre><code>&lt;!-- 下方為 Markdown 寫法 --&gt;
-1. 台劇
-4. 日劇
-6. 韓劇
-</code></pre><p><em>Christine&rsquo;s Memo：</em></p>
-<blockquote>
-<p><code>*</code>、<code>+</code>、<code>-</code>都能做為清單項目的標記符號，並可直接以空格縮排表示階層。而直接輸入<code>數字+.+空格</code>即可表示有序清單，其中數字正確性不重要，顯示於頁面都會是正確排序。</p>
-</blockquote>
-<p><strong>Check box：</strong></p>
-<ul>
-<li><input checked="" disabled="" type="checkbox">有打勾的項目</li>
-<li><input disabled="" type="checkbox">未打勾的項目</li>
-</ul>
-<pre><code>&lt;!-- 下方為 Markdown 寫法 --&gt;
-- [X] 有打勾的項目  
-- [ ] 未打勾的項目
-</code></pre><hr>
-<h4 id="-區塊">➤ 區塊</h4>
-<p><strong>小區塊：</strong><br>
-這是<code>標籤內的文字</code>，可隨時在行內穿插。</p>
-<pre><code>&lt;!-- 下方為 Markdown 寫法 --&gt;
-這是`標籤內的文字`，可隨時在行內穿插。
-</code></pre><p><strong>大區塊：</strong><br>
-顯示的畫面第一行(左邊輸入四個空格)</p>
-<pre><code>顯示的畫面第三行
-顯示的畫面第四行
-......
-</code></pre>
-<pre><code>&lt;!-- 下方為 Markdown 寫法 --&gt;
-    Markdown文件中第一行(左邊輸入四個空格)
-
-    Markdown文件中第三行
-    Markdown文件中第四行
-    ......
-</code></pre><p><strong>階層區塊：</strong></p>
-<blockquote>
-<p>第一層</p>
-<blockquote>
-<p>第二層</p>
-<blockquote>
-<p>第三層</p>
-</blockquote>
-</blockquote>
-</blockquote>
-<pre><code>&lt;!-- 下方為 Markdown 寫法 --&gt;
-&gt;第一層
-&gt;&gt;第二層
-&gt;&gt;&gt;第三層
-</code></pre><p><strong>程式碼高亮區塊：</strong></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#75715e">//如果是JavaScript
-</span><span style="color:#75715e"></span>window.<span style="color:#a6e22e">addEventListener</span>(<span style="color:#e6db74">&#39;load&#39;</span>, <span style="color:#66d9ef">function</span>() {  
-  <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#39;window loaded&#39;</span>);  
-});  
-</code></pre></div><pre><code>&lt;!-- 下方為 Markdown 寫法 --&gt;
-ˋˋˋJavaScript
-This is your code 
-ˋˋˋ
-</code></pre><p><em>Christine&rsquo;s Memo：</em></p>
-<blockquote>
-<p>前後使用三個反引號包住即可用來表示程式碼區塊，若想要高亮效果，可於第一行寫下程式語言的名字，特別注意所用的<code>反引號為Tab上面、數字1左邊的按鍵</code>，而非數字4的按鍵。</p>
-</blockquote>
-<hr>
-<h4 id="-圖片">➤ 圖片</h4>
-<p><img src="/images/demo.jpg" alt="圖片Alt屬性的值"></p>
-<pre><code>&lt;!-- 下方為 Markdown 寫法 --&gt;
-![圖片Alt屬性的值](/images/demo.jpg)
-</code></pre><p><em>Christine&rsquo;s Memo：</em></p>
-<blockquote>
-<p>圖片寫法不只一種，上面以最常見的方法為例，用法為<code>[圖片Alt屬性的值](連結路徑)</code>。連結路徑一樣可為網址或專案中檔案的相對路徑，特別注意<code>Markdown</code>無法直接指定圖片大小。</p>
-</blockquote>
-<hr>
-<h4 id="-表格">➤ 表格</h4>
-<table>
-<thead>
-<tr>
-<th align="left">1</th>
-<th align="center">2</th>
-<th align="right">3</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="left">4</td>
-<td align="center">5</td>
-<td align="right">6</td>
-</tr>
-<tr>
-<td align="left"><em>7</em></td>
-<td align="center"><code>8</code></td>
-<td align="right"><strong>9</strong></td>
-</tr>
-</tbody>
-</table>
-<pre><code>&lt;!-- 下方為 Markdown 寫法 --&gt;
-1           | 2            | 3  
-:-----------|:------------:|-----------:
- 4          | 5            | 6 
- _7_        | `8`          | **9** 
-</code></pre><p><em>Christine&rsquo;s Memo：</em></p>
-<blockquote>
-<p><code>:</code>可用來表示欄位的對齊方式，每個標頭元件都需用<code>|</code>隔開，但最外圍的豎線可省略。撰寫時不需特別使原始文字排列整齊，表格內也可使用文字樣式的<code>Markdown</code>語法。</p>
-</blockquote>
-<hr>
-<h4 id="-其他">➤ 其他</h4>
-<p><strong>水平裝飾線：</strong></p>
-<hr>
-<hr>
-<hr>
-<pre><code>&lt;!-- 下方為 Markdown 寫法 --&gt;
----
-***
-___ 
-</code></pre><p><em>Christine&rsquo;s Memo：</em></p>
-<blockquote>
-<p><code>*</code>、<code>-</code>、<code>_</code>皆可為裝飾線使用符號，但符號必須為獨立一行，不能跟其他文字混寫。</p>
-</blockquote>
-<p><strong>一般化符號：</strong><br>
-可在下列符號前加上反斜線來表示只想插入普通符號，使其不具特殊功能。<br>
-\<br>
--<br>
-+<br>
-*<br>
-`<br>
-_<br>
-{<br>
-[<br>
-(<br>
-#<br>
-.<br>
-!</p>
-<pre><code>&lt;!-- 下方為 Markdown 寫法 --&gt;
-\\  
-\-  
-\+  
-\*  
-\`  
-\_  
-\{  
-\[  
-\(  
-\#  
-\.  
-\! 
-</code></pre><p><strong>註解：</strong><br>
-<code>Markdown</code>的註解跟<code>HTML</code>相同，使用<code>&lt;!--</code>加上<code>--&gt;</code>包住註解文字。</p>
-<pre><code>&lt;!-- 可將註解寫在這裡 --&gt;
-</code></pre><p><strong>換行：</strong><br>
-欲換行的時候可在該行最後按兩個空白，或直接在檔案中按下Enter空出幾行。</p>
-<hr>
-<h4 id="-參考資料">➤ 參考資料</h4>
-<p>推薦新手可參考下面兩個網站，第一個是英文網站，可以帶你迅速理解<code>Markdown</code>的概念並練習基本語法；第二個是中文網站，提供多種<code>Mardown</code>語法範例，很適合入門者無腦複製貼上。</p>
-<ol>
-<li><a href="https://commonmark.org/">https://commonmark.org/</a></li>
-<li><a href="http://xianbai.me/learn-md/index.html">http://xianbai.me/learn-md/index.html</a></li>
-</ol>
-
-					</div>
+					
 				</article>
                 
 
@@ -426,6 +185,13 @@ _<br>
 			<div class="col-md-3 widget">
 				<h3 class="widget-title">Text widget</h3>
 				<div class="widget-body">
+					<span id="busuanzi_container_site_pv">
+						本站訪問量：<span id="busuanzi_value_site_pv"></span>次
+					</span>
+					<br>
+					<span id="busuanzi_container_site_uv">
+						本站訪客數：<span id="busuanzi_value_site_uv"></span>位
+					</span>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, nihil natus explicabo ipsum quia iste aliquid repellat eveniet velit ipsa sunt libero sed aperiam id soluta officia asperiores adipisci maxime!</p>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, nihil natus explicabo ipsum quia iste aliquid repellat eveniet velit ipsa sunt libero sed aperiam id soluta officia asperiores adipisci maxime!</p>
 				</div>
@@ -462,7 +228,7 @@ _<br>
 			<div class="col-md-6 widget">
 				<div class="widget-body">
 					<p class="text-right">
-						Copyright &copy; 2020, Christine Wu<br>
+						Copyright &copy; 2020, Christine&#39;s Space<br>
 						Design: <a href="http://www.gettemplate.com" rel="designer">Initio by GetTemplate</a> - 
                         Powered by: <a href="https://gohugo.io/" rel="poweredby">Hugo</a>
                     </p>
@@ -486,7 +252,7 @@ _<br>
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
   })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-  ga('create', 'GA-000000000-0', 'auto');
+  ga('create', 'UA-162979147-1', 'auto');
   ga('send', 'pageview');
 </script>
 

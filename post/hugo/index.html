@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport"    content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author"      content="Sergey Pozhilov (GetTemplate.com)">
+	
+	<meta name="p:domain_verify" content="842e11998f3b93944f2302fbba3c236e"/>
+
+	<title>Hugo&#43;GitHub Pages架站教學 </title>
+
+	<link rel="shortcut icon" href="https://Christine590.github.io/images/me.ico">
+
+	
+	<link href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.no-icons.min.css" rel="stylesheet">
+	
+	<script defer src="https://use.fontawesome.com/releases/v5.0.11/js/all.js" integrity="sha384-ImVoB8Er8knetgQakxuBS4G3RSkyD8IZVVQCAnmRJrDwqJFYUE4YOv+DbIofcO9C" crossorigin="anonymous"></script>
+	
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alice|Open+Sans:400,300,700">
+	
+	<link rel="stylesheet" href="https://Christine590.github.io/css/styles.css">
+	
+	<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+	
+
+    
+
+</head>
+<body class="home">
+
+<header id="header">
+	<div id="head" class="parallax" parallax-speed="2">
+           <div class="banner" style="background-image:url('https://Christine590.github.io/images/bg_code.jpg')" >
+           <h1 id="logo" class="text-center">
+              <img class="img-circle" src="https://Christine590.github.io/images/me.jpg" alt="">
+              <span class="title">Christine&#39;s Space</span>
+							<span class="tagline">Enjoy challenges !<br>
+								I like who I&#39;m becoming
+                 
+              </span>
+           </h1>
+        </div>
+
+    <nav class="navbar navbar-default navbar-sticky">
+    <div class="container-fluid">
+
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="true">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+
+        <div class="navbar-collapse collapse" id="bs-example-navbar-collapse-1">
+
+            <ul class="nav navbar-nav">
+                
+                <li>
+                    <a href="/">home</a>
+                </li>
+                
+                <li>
+                    <a href="/post/">post</a>
+                </li>
+                
+                <li>
+                    <a href="/about/">About</a>
+                </li>
+                
+                
+            </ul>
+
+        </div>
+    </div>
+</nav>
+<nav class="navbar navbar-fake"></nav>
+
+
+</header>
+
+<main id="main">
+
+	<div class="container">
+
+		<div class="row topspace">
+			<div class="col-sm-8 col-sm-offset-2">
+
+ 				<article class="post">
+					<header class="entry-header">
+ 						<div class="entry-meta">
+                                                   <span class="posted-on">
+                                                      <time class="entry-date published" datetime="March 310, 31310">March 31, 2020</time>
+                                                   </span>
+ 						</div>
+							<h1 class="entry-title"><a href="https://Christine590.github.io/post/hugo/" rel="bookmark">Hugo&#43;GitHub Pages架站教學 </a></h1>
+
+							
+							<ul id="article-info">
+								
+									<li id="categories">文章分類：<a href="https://Christine590.github.io/categories/%E5%80%8B%E4%BA%BA%E7%B6%B2%E7%AB%99%E5%BB%BA%E7%BD%AE%E6%95%99%E5%AD%B8">個人網站建置教學</a> </li>
+									<li id="busuanzi_container_page_pv">瀏覽次數：<span id="busuanzi_value_page_pv"></span></li>
+								
+							</ul>
+							
+
+							
+							
+					</header>
+					<div class="entry-content">
+						<h2 id="前言">前言</h2>
+<p>以前還是窮學生時，玩過的架站管道有三個：</p>
+<ol>
+<li>免費的線上架站平台(<a href="https://wordpress.com/">WordPress</a>、<a href="https://zh.wix.com/">Wix</a>等)</li>
+<li>自己開發的網站+免費虛擬主機服務提供平台(<a href="https://www.freehosting.com/">Free Hosting</a>、<a href="https://www.hostinger.com/">Hostinger</a>等)</li>
+<li>自己開發的網站+本機電腦作為自架伺服器(使用<a href="https://www.apachefriends.org/zh_tw/index.html">XAMPP</a>)</li>
+</ol>
+<p>接下來是缺點排排站時間：</p>
+<ol>
+<li>無腦使用UI就可以速成精美網站，但有損工程師的威嚴(嗎?)</li>
+<li>主機服務多是國外提供，常常連線不穩還限制流量(94要錢啦)</li>
+<li>本機的資安問題，還有電腦要一直開著(你關機伺服器就掛了啊啊啊)</li>
+</ol>
+<p>綜合以上幾點，終於在最近決定也來透過<a href="https://github.com/">GitHub</a>佈署自己的靜態網站，並選擇號稱世界上最快的網站生成框架<a href="https://gohugo.io/">Hugo</a>。下面就是我安裝的心路歷程啦！順便把中途遇到的疑難雜症跟解法記錄下來，希望也可以幫助到其他人囉 XD</p>
+<h2 id="前置作業">前置作業</h2>
+<ul>
+<li>具有命令提示字元的電腦</li>
+<li>註冊<a href="https://github.com/">GitHub</a>帳號</li>
+<li>安裝<a href="https://git-scm.com/">Git</a></li>
+<li>可撰寫程式且支援高亮顯示的軟體(<a href="https://www.sublimetext.com/3">Sublime</a>、<a href="https://code.visualstudio.com/download">Visual Studio Code</a>等)</li>
+</ul>
+<p><em>Christine&rsquo;s Memo：</em></p>
+<blockquote>
+<p>因為我的作業系統是Windows10，所以才寫<code>cmd</code>，總之需要任一種可輸入指令對電腦進行操作的<code>CLI(command line interface)</code>。程式開發軟體則依個人習慣啦~你硬要用記事本我也是不反對畢竟記事本萬能(?)</p>
+</blockquote>
+<h2 id="建置歷程">建置歷程</h2>
+<h4 id="---安裝hugo">➤   安裝Hugo</h4>
+<ol>
+<li>依自己的作業系統版本到<a href="https://github.com/gohugoio/hugo/releases">官網提供的載點</a>下載安裝包。</li>
+<li>將下載的zip解壓縮，沒意外應該有三個檔案(hugo.exe、LICENSE、README.md)。</li>
+<li>將解壓後檔案所在的資料夾路徑加到環境變數中。</li>
+<li>在<code>cmd</code>輸入下面指令可確認是否安裝成功。</li>
+</ol>
+<pre><code>hugo version
+</code></pre><p><em>Christine&rsquo;s Memo：</em></p>
+<blockquote>
+<p>將資料夾路徑加到環境變數中是要確保之後可順利使用<code>Hugo</code>相關指令，加環境變數的方法依系統而異，問<code>Google</code>就可以囉！補充一下，資料夾路徑就是你用檔案管理員打開資料夾後，上面方框中的C:\Users\blablabla那段，無腦複製就可以了</p>
+</blockquote>
+<hr>
+<h4 id="---建立網站檔案">➤   建立網站檔案</h4>
+<ol>
+<li>找好欲放置網站檔案的資料夾路徑(後續將稱其為網站根目錄)，並輸入下面指令。</li>
+</ol>
+<pre><code>hugo new site 網站根目錄
+</code></pre><ol start="2">
+<li>到該路徑下確認是否成功建立檔案，資料夾結構可能如下：</li>
+</ol>
+<ul>
+<li>archetypes：<br>
+存放<code>markdown</code>文件中前置數據<code>Front Matter</code>定義的結構(透過hugo new指令生成的<code>markdown</code>文章檔案會默認以default.md為格式基底)</li>
+<li>content：<br>
+存放全站內容的<code>markdown</code>文件</li>
+<li>data：<br>
+存放資料檔案(如<code>JSON</code>)</li>
+<li>layouts<br>
+存放自定義的樣板檔案(建置時若layouts中無檔案，則會使用themes中的)</li>
+<li>public<br>
+存放建置完成的最終檔案(部屬到<code>GitHub Pages</code>的部分)</li>
+<li>static<br>
+存放靜態檔案(如<code>CSS</code>、<code>JS</code>、<code>IMG</code>)</li>
+<li>themes：<br>
+存放已下載的主題檔案包</li>
+<li>config.toml：<br>
+存放全站的參數設定文件</li>
+</ul>
+<hr>
+<h4 id="---安裝hugo主題">➤   安裝Hugo主題</h4>
+<ol>
+<li>到<a href="https://themes.gohugo.io/">主題網站</a>找到喜歡的主題，然後執行下面指令來切換到themes資料夾。</li>
+</ol>
+<pre><code>cd 網站根目錄\themes
+</code></pre><ol start="2">
+<li>在線上的主題介紹頁中按下Download的按鈕，然後將該連結頁面的網址複製下來，輸入下面指令來抓取主題。</li>
+</ol>
+<pre><code>git clone 複製的主題下載網址
+</code></pre><ol start="3">
+<li>到themes資料夾確認是否成功下載了主題檔案。</li>
+</ol>
+<hr>
+<h4 id="---建立第一個頁面">➤   建立第一個頁面</h4>
+<ol>
+<li>在網站根目錄輸入下面指令，建立第一個頁面。</li>
+</ol>
+<pre><code>hugo new about.md
+</code></pre><ol start="2">
+<li>到content資料夾中確認是否成功建立了about.md，打開該檔案可對頁面進行部分設定(依各主題設計有所不同)。</li>
+</ol>
+<hr>
+<h4 id="---建立第一篇文章">➤   建立第一篇文章</h4>
+<ol>
+<li>建議將文章放置於同一資料夾進行管理，因此可在網站根目錄輸入下面指令來建立新文章。</li>
+</ol>
+<pre><code>hugo new post/firstpost.md
+</code></pre><ol start="2">
+<li>在網站根目錄確認是否成功建立了post資料夾及firstpost.md，打開該檔案可對文章內容進行設定跟撰寫。</li>
+</ol>
+<hr>
+<h4 id="---預覽網站">➤   預覽網站</h4>
+<ol>
+<li>在網站根目錄輸入下面指令，Hugo會根據設定檔(.md)自動建置出實體html檔放於public資料夾中(預設)。</li>
+</ol>
+<pre><code>hugo
+</code></pre><p><em>Christine&rsquo;s Memo：</em></p>
+<blockquote>
+<p>我在執行過程中有發生錯誤，訊息為「found no layout file for &ldquo;HTML&rdquo; for &ldquo;section&rdquo;: You should create a template file which matches Hugo Layouts Lookup Rules for this combination.」，後來把themes中layout資料夾內的所有檔案手動貼到網站根目錄下的layout資料夾內，才終於解決了問題</p>
+</blockquote>
+<ol start="2">
+<li>在網站根目錄輸入下面指令，即可透過瀏覽器預覽網站。</li>
+</ol>
+<pre><code>hugo server
+</code></pre><ol start="3">
+<li>於瀏覽器輸入<a href="http://localhost:1313/">http://localhost:1313/</a>(預設)查看頁面。</li>
+</ol>
+<p><em>Christine&rsquo;s Memo：</em></p>
+<blockquote>
+<p>我在預覽頁面時發現，所見的內容並非我在.toml設定的，也沒有吃到CSS/JS等檔案，執行hugo -v指令才知道config.toml中有個屬性是&quot;publishDir&rdquo;，而他的值並不是&quot;public&rdquo;，因此產出的完整檔案都沒有放到&quot;public&quot;資料夾中，以致我看到的頁面是有問題的，後來手動改為publishDir = &ldquo;public&quot;才解決問題</p>
+</blockquote>
+<hr>
+<h4 id="---部署到github">➤   部署到GitHub</h4>
+<ol>
+<li>登入你的<a href="https://github.com/">GitHub</a>帳號，建立一個新的Repository，並命名為「你的使用者名稱.github.io」。</li>
+</ol>
+<p><em>Christine&rsquo;s Memo：</em></p>
+<blockquote>
+<p>例如我的<code>GitHub</code>使用者名稱為Christine590，就一定要輸入「Christine590.github.io」喔</p>
+</blockquote>
+<ol start="2">
+<li>切換到欲作為本機Repository存放處的資料夾</li>
+</ol>
+<pre><code>cd 欲作為本機Repository存放處的資料夾路徑
+</code></pre><ol start="3">
+<li>如果是初次使用，需要先設定使用者名稱及電子郵件。</li>
+</ol>
+<pre><code>git config --global user.name 你的使用者名稱
+git config --global user.email 你的電子郵件
+</code></pre><p><em>Christine&rsquo;s Memo：</em></p>
+<blockquote>
+<p>若已安裝<code>Git</code>但在<code>cmd</code>輸入時顯示&quot;不是內部或外部指令&rdquo;，代表你需要把git-core所在的資料夾路徑加到環境變數中，特別注意加完之後要重開<code>cmd</code>才會生效喔</p>
+</blockquote>
+<ol start="4">
+<li>將<code>GitHub</code>上建立的Repository複製一份到本機端。</li>
+</ol>
+<pre><code>git clone https://github.com/你的使用者名稱/你的使用者名稱.github.io.git
+</code></pre><ol start="5">
+<li>切換到public資料夾中(因為public資料夾中的檔案才是建置完成的可預覽靜態檔案)。</li>
+</ol>
+<pre><code>cd 網站根目錄\public
+</code></pre><ol start="6">
+<li>將網站的內容部屬到<code>GitHub Pages</code>。</li>
+</ol>
+<pre><code>git add -A
+git commit -m &quot;本次版本異動的註解(也就是commit)&quot;
+git push origin master
+</code></pre><p><em>Christine&rsquo;s Memo：</em></p>
+<blockquote>
+<p>執行git add指令前必須切換到「你的使用者名稱.github.io」那個Repository，不然上面指令可能會執行失敗，此時可以先試試下面的指令，完成後再重新執行一次步驟6的指令</p>
+</blockquote>
+<pre><code>git init  
+git remote add origin https://github.com/你的使用者名稱/你的使用者名稱.github.io.git  
+</code></pre><ol start="7">
+<li>於瀏覽器上輸入<a href="">https://你的使用者名稱.github.io/</a>就可以看到完整的個人主頁囉！</li>
+</ol>
+<h2 id="後續維護">後續維護</h2>
+<h4 id="---編輯文章修改樣版新增資源檔">➤   編輯文章/修改樣版/新增資源檔</h4>
+<ol>
+<li>在進行調整後，若想預覽結果，依序執行下列指令即可。</li>
+</ol>
+<pre><code>cd 網站根目錄
+hugo
+hugo server
+</code></pre><p><em>Christine&rsquo;s Memo：</em></p>
+<blockquote>
+<p>因<code>Hugo</code>支援熱部署(livereload)，修改文章或是更新css的話，刷新頁面即可看到效果，不需要重新建置喔</p>
+</blockquote>
+<hr>
+<h4 id="---更新至github-pages">➤   更新至GitHub Pages</h4>
+<ol>
+<li>若要將更新後的檔案部屬到線上，依序執行下列指令即可。</li>
+</ol>
+<pre><code>cd 網站根目錄
+git add -A
+git commit -m &quot;本次的變更說明&quot;
+git push -u origin master
+</code></pre><h2 id="後記">後記</h2>
+<p>關於<code>Hugo</code>還有很多應用，本篇只先講解了建置個人網站的方法，有興趣的版友可再自行研究下列議題喔！</p>
+<ol>
+<li>在個人網站埋設數據追蹤碼，可到<a href="https://marketingplatform.google.com/about/analytics/">Google Analytics</a>申請個人免費帳號</li>
+<li>顯示主站或每篇文章瀏覽量，可使用<a href="http://ibruce.info/2015/04/04/busuanzi/">不蒜子</a></li>
+<li>新增文章分類、文章標籤、系列文章等註記</li>
+<li>讓<code>GitHub Pages</code>可以被搜尋引擎索引及相關<code>SEO</code>作法</li>
+<li>自動化部屬至<code>GitHub Pages</code>的實作方式</li>
+</ol>
+
+					</div>
+					
+							<ul id="tags">
+								<span id="tags-title">相關標籤：</span><br>
+								
+									<li><a href="https://Christine590.github.io/tags/hugo">Hugo</a> </li>
+								
+									<li><a href="https://Christine590.github.io/tags/github">GitHub</a> </li>
+								
+									<li><a href="https://Christine590.github.io/tags/github-pages">GitHub Pages</a> </li>
+								
+							</ul>
+					
+				</article>
+
+			</div>
+		</div> 
+
+        <div class="row">
+			<div class="col-sm-8 col-sm-offset-2">
+
+				<div id="share">
+                    
+				</div>
+			</div>
+		</div> 
+		<div class="clearfix"></div>
+
+		<div class="row">
+			<div class="col-sm-8 col-sm-offset-2">
+
+				<div id="comments">
+                    
+				</div>
+			</div>
+		</div> 
+		<div class="clearfix"></div>
+
+	</div>	
+
+</main>
+
+<footer id="footer">
+	<div class="container">
+		<div class="row">
+			
+			<div class="col-md-3 widget">
+				<h3 class="widget-title">Contact</h3>
+				<div class="widget-body">
+					<p>&#43;886 975267503<br>
+					<a href="mailto:christine.wu.taiwan@gmail.com">christine.wu.taiwan@gmail.com</a><br>
+						<br>
+						Taipei City, Taiwan
+					</p>
+				</div>
+			</div>
+			
+
+			
+			<div class="col-md-3 widget">
+				<h3 class="widget-title">Follow me</h3>
+				<div class="widget-body">
+					<p class="follow-me-icons">
+                        
+                            
+                                <a href="https://www.facebook.com/nickname" target="_blank"><i class="fab fa-facebook-square fa-1x"></i></a>
+                            
+                        
+                            
+                                <a href="https://twitter.com/nickname" target="_blank"><i class="fab fa-twitter-square fa-1x"></i></a>
+                            
+                        
+                            
+                                <a href="https://www.instagram.com/nickname" target="_blank"><i class="fab fa-instagram fa-1x"></i></a>
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                                <a href="https://github.com/Christine590" target="_blank"><i class="fab fa-github fa-1x"></i></a>
+                            
+                        
+                            
+                        
+					</p>
+				</div>
+			</div>
+			
+
+			
+			<div class="col-md-3 widget">
+				<h3 class="widget-title">Text widget</h3>
+				<div class="widget-body">
+					<span id="busuanzi_container_site_pv">
+						本站訪問量：<span id="busuanzi_value_site_pv"></span>次
+					</span>
+					<br>
+					<span id="busuanzi_container_site_uv">
+						本站訪客數：<span id="busuanzi_value_site_uv"></span>位
+					</span>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, nihil natus explicabo ipsum quia iste aliquid repellat eveniet velit ipsa sunt libero sed aperiam id soluta officia asperiores adipisci maxime!</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, nihil natus explicabo ipsum quia iste aliquid repellat eveniet velit ipsa sunt libero sed aperiam id soluta officia asperiores adipisci maxime!</p>
+				</div>
+			</div>
+			
+
+			
+			<div class="col-md-3 widget">
+				<h3 class="widget-title">Form widget</h3>
+				<div class="widget-body">
+					<p>&#43;886 975267503<br>
+					<a href="mailto:christine.wu.taiwan@gmail.com">christine.wu.taiwan@gmail.com</a><br>
+						<br>
+						Taipei City, Taiwan
+					</p>
+				</div>
+			</div>
+			
+
+		</div> 
+	</div>
+</footer>
+
+<footer id="underfooter">
+	<div class="container">
+		<div class="row">
+
+			<div class="col-md-6 widget">
+				<div class="widget-body">
+					<p>Taipei City, Taiwan</p>
+				</div>
+			</div>
+
+			<div class="col-md-6 widget">
+				<div class="widget-body">
+					<p class="text-right">
+						Copyright &copy; 2020, Christine&#39;s Space<br>
+						Design: <a href="http://www.gettemplate.com" rel="designer">Initio by GetTemplate</a> - 
+                        Powered by: <a href="https://gohugo.io/" rel="poweredby">Hugo</a>
+                    </p>
+				</div>
+			</div>
+
+		</div> 
+	</div>
+</footer>
+
+
+
+
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+<script src="https://Christine590.github.io/js/template.js"></script>
+<script id="dsq-count-scr" src="//hugo-initio-site.disqus.com/count.js" async></script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-162979147-1', 'auto');
+  ga('send', 'pageview');
+</script>
+
+</body>
+</html>
+

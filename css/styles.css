@@ -828,3 +828,46 @@ footer.entry-meta .meta-in {
       color: #004488;
    }
 }
+/*********************************************************************
+
+
+                                Customized
+
+
+**********************************************************************/
+#article-info {
+  list-style-type: none; /*不顯示項目符號*/
+}
+#article-info li {
+  display: inline; /*水平排列*/
+  padding-left: 24px;
+  margin-right: 10px;
+}
+#article-info #categories {
+  background-image: url(../images/icon/open-folder.svg);
+  background-repeat: no-repeat;
+}
+#article-info #busuanzi_container_page_pv {
+  background-image: url(../images/icon/book-with-sound.svg);
+  background-repeat: no-repeat;
+}
+
+#tags {
+  list-style-type: none; /*不顯示項目符號*/
+  background-image: url(../images/icon/tags.svg);
+  background-repeat: no-repeat;
+  padding-left: 24px;
+}
+#tags #tags-title {
+  display:block; /*span原是行屬性，須強制為塊屬性margin-top/bottom才有效*/
+}
+#tags li {
+  display: inline;
+  margin-right: 4px;
+}
+#tags a {
+  border: 1px solid #780d33;
+  border-radius: 8px;
+  padding: 2px 8px;
+  text-decoration: none;
+}

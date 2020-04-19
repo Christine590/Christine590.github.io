@@ -6,8 +6,10 @@
 	<meta name="viewport"    content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="">
 	<meta name="author"      content="Sergey Pozhilov (GetTemplate.com)">
+	
+	<meta name="p:domain_verify" content="842e11998f3b93944f2302fbba3c236e"/>
 
-	<title>Christine&#39;s Site</title>
+	<title>Christine&#39;s Space</title>
 
 	<link rel="shortcut icon" href="https://Christine590.github.io/images/me.ico">
 
@@ -19,6 +21,8 @@
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alice|Open+Sans:400,300,700">
 	
 	<link rel="stylesheet" href="https://Christine590.github.io/css/styles.css">
+	
+	<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 
 	
 
@@ -32,7 +36,7 @@
            <div class="banner" style="background-image:url('https://Christine590.github.io/images/bg_code.jpg')" >
            <h1 id="logo" class="text-center">
               <img class="img-circle" src="https://Christine590.github.io/images/me.jpg" alt="">
-              <span class="title">Christine Wu</span>
+              <span class="title">Christine&#39;s Space</span>
 							<span class="tagline">Enjoy challenges !<br>
 								I like who I&#39;m becoming
                  
@@ -61,11 +65,7 @@
                 </li>
                 
                 <li>
-                    <a href="/">portfolio</a>
-                </li>
-                
-                <li>
-                    <a href="/post/">blog</a>
+                    <a href="/post/">post</a>
                 </li>
                 
                 <li>
@@ -89,41 +89,96 @@
         
             <div class="row section topspace">
     <div class="col-md-12">
-       <p class="lead text-center text-muted"></p>
+       <p class="lead text-center text-muted" id="ityped">I am a(n) programmer/illustrator/blogger/designer...</p>
     </div>
 </div> 
+
+
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script>
+function gn() {
+const dom = $('#ityped')
+const data = '最简单的打字效果代码'.split('')
+    let index = 0 
+    function writing(index) {
+        if (index < data.length) {
+            dom.innerHTML += data[index]
+            setTimeout(writing.bind(this), 200, ++index)
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+
+</script>
+
 
         
 
         
             <div class="row section featured topspace">
 
-    <h2 class="section-title"><span>Services</span></h2>
+    <h2 class="section-title"><span>What I can do</span></h2>
 
     <div class="">
         
             <div class="col-sm-6 col-md-3">
-                <h3 class="text-center">Application development</h3>
-                <p><p>I don&rsquo;t think they tried to market it to the billionaire, spelunking, base-jumping crowd. i did the same thing to gandhi, he didn&rsquo;t eat for three weeks. i once heard a wise man say there are no perfect men.</p></p>
-                <p class="text-center"><a href="https://Christine590.github.io/service/service3/" class="btn btn-action">Read more</a></p>
-            </div>
-        
-            <div class="col-sm-6 col-md-3">
-                <h3 class="text-center">Custom website design</h3>
+                <h3 class="text-center">多媒體設計</h3>
                 <p><p>I don&rsquo;t think they tried to market it to the billionaire, spelunking, base-jumping crowd. i did the same thing to gandhi, he didn&rsquo;t eat for three weeks. i once heard a wise man say there are no perfect men.</p></p>
                 <p class="text-center"><a href="https://Christine590.github.io/service/service1/" class="btn btn-action">Read more</a></p>
             </div>
         
             <div class="col-sm-6 col-md-3">
-                <h3 class="text-center">SEO &amp; SEM services</h3>
+                <h3 class="text-center">插畫繪製</h3>
                 <p><p>I don&rsquo;t think they tried to market it to the billionaire, spelunking, base-jumping crowd. i did the same thing to gandhi, he didn&rsquo;t eat for three weeks. i once heard a wise man say there are no perfect men.</p></p>
-                <p class="text-center"><a href="https://Christine590.github.io/service/service4/" class="btn btn-action">Read more</a></p>
+                <p class="text-center"><a href="https://Christine590.github.io/service/service3/" class="btn btn-action">Read more</a></p>
             </div>
         
             <div class="col-sm-6 col-md-3">
-                <h3 class="text-center">Wordpress integration</h3>
+                <h3 class="text-center">文章創作</h3>
                 <p><p>I don&rsquo;t think they tried to market it to the billionaire, spelunking, base-jumping crowd. i did the same thing to gandhi, he didn&rsquo;t eat for three weeks. i once heard a wise man say there are no perfect men.</p></p>
                 <p class="text-center"><a href="https://Christine590.github.io/service/service2/" class="btn btn-action">Read more</a></p>
+            </div>
+        
+            <div class="col-sm-6 col-md-3">
+                <h3 class="text-center">程式開發</h3>
+                <p><p>I don&rsquo;t think they tried to market it to the billionaire, spelunking, base-jumping crowd. i did the same thing to gandhi, he didn&rsquo;t eat for three weeks. i once heard a wise man say there are no perfect men.</p></p>
+                <p class="text-center"><a href="https://Christine590.github.io/service/service4/" class="btn btn-action">Read more</a></p>
             </div>
         
     </div>
@@ -247,6 +302,13 @@
 			<div class="col-md-3 widget">
 				<h3 class="widget-title">Text widget</h3>
 				<div class="widget-body">
+					<span id="busuanzi_container_site_pv">
+						本站訪問量：<span id="busuanzi_value_site_pv"></span>次
+					</span>
+					<br>
+					<span id="busuanzi_container_site_uv">
+						本站訪客數：<span id="busuanzi_value_site_uv"></span>位
+					</span>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, nihil natus explicabo ipsum quia iste aliquid repellat eveniet velit ipsa sunt libero sed aperiam id soluta officia asperiores adipisci maxime!</p>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, nihil natus explicabo ipsum quia iste aliquid repellat eveniet velit ipsa sunt libero sed aperiam id soluta officia asperiores adipisci maxime!</p>
 				</div>
@@ -283,7 +345,7 @@
 			<div class="col-md-6 widget">
 				<div class="widget-body">
 					<p class="text-right">
-						Copyright &copy; 2020, Christine Wu<br>
+						Copyright &copy; 2020, Christine&#39;s Space<br>
 						Design: <a href="http://www.gettemplate.com" rel="designer">Initio by GetTemplate</a> - 
                         Powered by: <a href="https://gohugo.io/" rel="poweredby">Hugo</a>
                     </p>
@@ -307,7 +369,7 @@
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
   })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-  ga('create', 'GA-000000000-0', 'auto');
+  ga('create', 'UA-162979147-1', 'auto');
   ga('send', 'pageview');
 </script>
 

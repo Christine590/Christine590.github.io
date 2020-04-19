@@ -1,26 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Christine&#39;s Space</title>
-    <link>https://Christine590.github.io/</link>
-    <description>Recent content on Christine&#39;s Space</description>
+    <title>Hugo on Christine&#39;s Space</title>
+    <link>https://Christine590.github.io/tags/hugo/</link>
+    <description>Recent content in Hugo on Christine&#39;s Space</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
     <lastBuildDate>Tue, 31 Mar 2020 20:44:23 +0800</lastBuildDate>
     
-	<atom:link href="https://Christine590.github.io/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://Christine590.github.io/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>About</title>
-      <link>https://Christine590.github.io/about/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://Christine590.github.io/about/</guid>
-      <description>我喜歡寫程式、喜歡隨畫隨寫，閒暇時也下下廚、做做手工藝，或者學習外語，是現代少數仍偏好紙本書大於電子書的人，我享受生活中的每分每秒。
-資管人的自白 上大學時選擇了資訊相關科系，其實最初只是抱著「學這個工作應該會比較好找吧」的心態，誰知直接入了坑，甚至續攻研究所。在程式開發的世界，太多高手在前面破風，為後人成就更多的技術基底，我不奢望自己能像他們一樣走在最前端，但期許每天的自己都能比昨天的自己更有價值。
-開站緣由 雖然我本來就是一個熱衷於作筆記的人，但讓我真正打算把筆記以Blog形式記錄下來的契機，是因為看到某個部落客的一段話：「你可能覺得自己的認知或技術太粗淺，不足以供別人學習或參考，但你要知道，就算你是新手，也永遠都會有比你更新的新手存在。」</description>
-    </item>
     
     <item>
       <title>Hugo&#43;GitHub Pages架站教學 </title>
@@ -60,42 +49,6 @@ H1 H2 H3 H4 H5 H6 &amp;lt;!-- 下方為 Markdown 寫法 --&amp;gt; # H1 ## H2 ##
 粗體
 斜體 斜體
 刪除線</description>
-    </item>
-    
-    <item>
-      <title>多媒體設計</title>
-      <link>https://Christine590.github.io/service/service1/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://Christine590.github.io/service/service1/</guid>
-      <description>&lt;p&gt;I don&amp;rsquo;t think they tried to market it to the billionaire, spelunking, base-jumping crowd. i did the same thing to gandhi, he didn&amp;rsquo;t eat for three weeks. i once heard a wise man say there are no perfect men.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>插畫繪製</title>
-      <link>https://Christine590.github.io/service/service3/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://Christine590.github.io/service/service3/</guid>
-      <description>&lt;p&gt;I don&amp;rsquo;t think they tried to market it to the billionaire, spelunking, base-jumping crowd. i did the same thing to gandhi, he didn&amp;rsquo;t eat for three weeks. i once heard a wise man say there are no perfect men.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>文章創作</title>
-      <link>https://Christine590.github.io/service/service2/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://Christine590.github.io/service/service2/</guid>
-      <description>&lt;p&gt;I don&amp;rsquo;t think they tried to market it to the billionaire, spelunking, base-jumping crowd. i did the same thing to gandhi, he didn&amp;rsquo;t eat for three weeks. i once heard a wise man say there are no perfect men.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>程式開發</title>
-      <link>https://Christine590.github.io/service/service4/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://Christine590.github.io/service/service4/</guid>
-      <description>&lt;p&gt;I don&amp;rsquo;t think they tried to market it to the billionaire, spelunking, base-jumping crowd. i did the same thing to gandhi, he didn&amp;rsquo;t eat for three weeks. i once heard a wise man say there are no perfect men.&lt;/p&gt;</description>
     </item>
     
   </channel>
