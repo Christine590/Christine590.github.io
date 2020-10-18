@@ -6,11 +6,7 @@
     <description>Recent content on Christine&#39;s Space</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Tue, 31 Mar 2020 20:44:23 +0800</lastBuildDate>
-    
-	<atom:link href="https://Christine590.github.io/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Tue, 31 Mar 2020 20:44:23 +0800</lastBuildDate><atom:link href="https://Christine590.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>About</title>
       <link>https://Christine590.github.io/about/</link>
@@ -19,7 +15,7 @@
       <guid>https://Christine590.github.io/about/</guid>
       <description>我喜歡寫程式、喜歡隨畫隨寫，閒暇時也下下廚、做做手工藝，或者學習外語，是現代少數仍偏好紙本書大於電子書的人，我享受生活中的每分每秒。
 資管人的自白 上大學時選擇了資訊相關科系，其實最初只是抱著「學這個工作應該會比較好找吧」的心態，誰知直接入了坑，甚至續攻研究所。在程式開發的世界，太多高手在前面破風，為後人成就更多的技術基底，我不奢望自己能像他們一樣走在最前端，但期許每天的自己都能比昨天的自己更有價值。
-開站緣由 雖然我本來就是一個熱衷於作筆記的人，但讓我真正打算把筆記以Blog形式記錄下來的契機，是因為看到某個部落客的一段話：「你可能覺得自己的認知或技術太粗淺，不足以供別人學習或參考，但你要知道，就算你是新手，也永遠都會有比你更新的新手存在。」</description>
+開站緣由 雖然我本來就是一個熱衷於作筆記的人，但讓我真正打算把筆記以網路文章形式記錄下來的契機，是因為看到某個部落客的一段話，他說：「你可能覺得自己的認知或技術太粗淺，不足以供別人學習或參考，但你要知道，就算你是新手，也永遠都會有比你更新的新手存在。」</description>
     </item>
     
     <item>
@@ -68,7 +64,7 @@ H1 H2 H3 H4 H5 H6 &amp;lt;!-- 下方為 Markdown 寫法 --&amp;gt; # H1 ## H2 ##
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://Christine590.github.io/service/service1/</guid>
-      <description>&lt;p&gt;I don&amp;rsquo;t think they tried to market it to the billionaire, spelunking, base-jumping crowd. i did the same thing to gandhi, he didn&amp;rsquo;t eat for three weeks. i once heard a wise man say there are no perfect men.&lt;/p&gt;</description>
+      <description>&lt;p&gt;憑藉熱情修習過不少多媒體課程，滿滿的視覺設計、動畫製作、影音剪輯作品，替我紀錄了每個用心走過的痕跡。&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -77,16 +73,16 @@ H1 H2 H3 H4 H5 H6 &amp;lt;!-- 下方為 Markdown 寫法 --&amp;gt; # H1 ## H2 ##
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://Christine590.github.io/service/service3/</guid>
-      <description>&lt;p&gt;I don&amp;rsquo;t think they tried to market it to the billionaire, spelunking, base-jumping crowd. i did the same thing to gandhi, he didn&amp;rsquo;t eat for three weeks. i once heard a wise man say there are no perfect men.&lt;/p&gt;</description>
+      <description>&lt;p&gt;藝術領域始終令我深深著迷，畫圖更是我生活中不可或缺的一部份，無論手繪還是電繪，我都喜歡。&lt;/p&gt;</description>
     </item>
     
     <item>
-      <title>文章創作</title>
+      <title>文案撰寫</title>
       <link>https://Christine590.github.io/service/service2/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://Christine590.github.io/service/service2/</guid>
-      <description>&lt;p&gt;I don&amp;rsquo;t think they tried to market it to the billionaire, spelunking, base-jumping crowd. i did the same thing to gandhi, he didn&amp;rsquo;t eat for three weeks. i once heard a wise man say there are no perfect men.&lt;/p&gt;</description>
+      <description>&lt;p&gt;中文之美難以言喻，簡短的文句也能有大大的力量。對於用文字傳遞情感與想法，我一直都在摸索學習的路上。&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -95,7 +91,7 @@ H1 H2 H3 H4 H5 H6 &amp;lt;!-- 下方為 Markdown 寫法 --&amp;gt; # H1 ## H2 ##
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://Christine590.github.io/service/service4/</guid>
-      <description>&lt;p&gt;I don&amp;rsquo;t think they tried to market it to the billionaire, spelunking, base-jumping crowd. i did the same thing to gandhi, he didn&amp;rsquo;t eat for three weeks. i once heard a wise man say there are no perfect men.&lt;/p&gt;</description>
+      <description>&lt;p&gt;日復一日的碼農日常，是我選擇的，也是我愛的。我一直都覺得，當工程師的女生超酷的。&lt;/p&gt;</description>
     </item>
     
   </channel>
